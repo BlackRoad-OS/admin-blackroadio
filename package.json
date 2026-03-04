@@ -1,5 +1,10 @@
 {
   "name": "@blackroad/admin-blackroadio",
   "version": "1.0.0",
-  "scripts": { "dev": "npx serve .", "deploy": "wrangler pages deploy ." }
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve .",
+    "test": "node --test test/worker.test.js",
+    "deploy": "wrangler pages deploy ."
+  }
 }
